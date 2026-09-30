@@ -146,8 +146,14 @@ window.BIRTHDAY_CONFIG = {
   },
 
   // Sound settings
-  audio: {
-    enabledByDefault: false,
-    useSynthesizedAudio: true // Pure Web Audio API: tactile camera clicks, paper flips, stamp drops, gold chime
+ audio: {
+  enabledByDefault: false,
+  useSynthesizedAudio: true,
+  song: {
+    enabled: true,
+    src: "",
+    volume: 0.85,
+    loop: false
   }
+}
 };
