@@ -151,7 +151,7 @@ window.BIRTHDAY_CONFIG = {
   useSynthesizedAudio: true,
   song: {
     enabled: true,
-    src: "",
+    src: "whatsapp-audio-2026-08-07-at-114054-am_qiVL68Oc.mp3",
     volume: 0.85,
     loop: false
   }
