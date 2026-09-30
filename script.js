@@ -52,6 +52,42 @@
       state.audioCtx.resume();
     }
   }
+  function initBirthdaySong() {
+  const songConfig = config.audio?.song;
+
+  if (!songConfig?.enabled) return null;
+
+  if (!state.birthdaySong) {
+    state.birthdaySong = new Audio(songConfig.src);
+    state.birthdaySong.preload = 'auto';
+    state.birthdaySong.volume = songConfig.volume ?? 0.85;
+    state.birthdaySong.loop = songConfig.loop ?? false;
+
+    state.birthdaySong.addEventListener('error', () => {
+      console.error('Birthday song failed to load:', songConfig.src);
+    });
+  }
+
+  return state.birthdaySong;
+}
+
+function playBirthdaySong() {
+  const song = initBirthdaySong();
+
+  if (!song) return;
+
+  const songConfig = config.audio.song;
+
+  song.volume = songConfig.volume ?? 0.85;
+  song.loop = songConfig.loop ?? false;
+
+  // Don't create/restart another copy if already playing
+  if (!song.paused) return;
+
+  song.play().catch((error) => {
+    console.error('Birthday song playback failed:', error);
+  });
+}
 
   function playSound(type) {
     if (!state.audioEnabled || !state.audioCtx) return;
@@ -277,7 +313,14 @@
       goToSpread(state.currentSpread + 1);
     }
   }
+const claimBtn = document.getElementById('claimSethBtn');
 
+if (claimBtn) {
+  claimBtn.addEventListener('click', () => {
+    playBirthdaySong();
+    openFinalClimax();
+  });
+}
   function prevSpread() {
     if (state.currentSpread > 0) {
       goToSpread(state.currentSpread - 1);
