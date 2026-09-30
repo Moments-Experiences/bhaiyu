@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>MOMENT — Sahil Birthday Issue (Special Edition)</title>
+  <meta name="theme-color" content="#151515">
+  
+  <!-- Editorial Typography: High Fashion Serif + Bold Display + Minimal Sans + Monospace -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Paper Fiber Grain -->
+  <div class="editorial-grain" aria-hidden="true"></div>
+
+  <!-- Top Masthead Bar -->
+  <header class="magazine-masthead">
+    <div class="masthead-brand" id="mastheadBrand">
+      <span class="dot"></span> MOMENT · SAHIL
+    </div>
+    <div class="masthead-center" id="mastheadSubtitle">
+      THE LEGEND OF HIS MOHALLA // VOL. XXIV
+    </div>
+    <div class="masthead-actions">
+      <button class="audio-toggle-btn" id="audioToggleBtn" aria-label="Toggle ambient sound">
+        <span id="audioToggleIcon">♪</span>
+        <span id="audioToggleText">SOUND: OFF</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Magazine Viewport & Spread Deck -->
+  <main class="magazine-viewport">
+    <div class="spread-deck" id="spreadDeck">
+
+      <!-- ====================================================================
+           SPREAD 0: COVER / TITLE SEQUENCE (FASHION FILM / LUXURY OPENING)
+           ==================================================================== -->
+      <section class="spread spread-cover active" id="spread-0" aria-label="Magazine Cover">
+        <div class="cover-wrapper">
+          <div class="cover-light-sweep" aria-hidden="true"></div>
+          
+          <div class="cover-header">
+            <span>MOMENT PRESENTS</span>
+            <span>SPECIAL EDITION // 01</span>
+          </div>
+
+          <div class="cover-center">
+            <div class="cover-kicker">// EXCLUSIVE BIOGRAPHICAL PROFILE</div>
+            <h1 class="cover-title">
+              <span id="coverTitle">SAHIL</span>
+              <span class="cover-title-alt" id="coverTitleAlt">BHAIYU</span>
+            </h1>
+            <p class="cover-subtitle" id="coverSubtitle">THE LEGEND OF HIS MOHALLA</p>
+          </div>
+
+          <div class="cover-footer">
+            <div class="cover-issue-tag" id="coverIssue">BIRTHDAY ISSUE // 2026</div>
+            <button class="btn-editorial-primary" id="enterPublicationBtn">
+              ENTER PUBLICATION →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SPREAD 1: CANCEL!!
+           ==================================================================== -->
+      <section class="spread" id="spread-1" aria-label="Spread 01: Cancel">
+        <div class="editorial-frame">
+          <div class="spread-header">
+            <div class="spread-category">SPREAD 01 // DIPLOMATIC EXPEDITIONS</div>
+            <div class="spread-pagination">P. 02</div>
+          </div>
+
+          <h2 class="spread-action-hero">CANCEL!!</h2>
+
+          <div class="spread-cancel-grid">
+            <div class="booking-dossier">
+              <div class="dossier-header">
+                <span>OFFICIAL TRIP DOSSIER</span>
+                <span>STATUS: ARCHIVED</span>
+              </div>
+
+              <!-- Fake booking interface with crossed-out plans -->
+              <div class="dossier-row">
+                <span class="dossier-label">PLAN:</span>
+                <span class="dossier-value plan-strike">TRIP</span>
+              </div>
+              <div class="dossier-row">
+                <span class="dossier-label">STATUS:</span>
+                <span class="dossier-value status-tag-red">CANCELLED</span>
+              </div>
+              <div class="dossier-row">
+                <span class="dossier-label">REASON:</span>
+                <span class="dossier-value font-italic">???</span>
+              </div>
+
+              <!-- Mini Calendar Strip with Crossed Out Days -->
+              <div class="calendar-micro-strip">
+                <div class="cal-day">
+                  <div class="cal-day-name">FRI</div>
+                  <div class="cal-day-num">12</div>
+                  <div class="cal-day-status">READY</div>
+                </div>
+                <div class="cal-day crossed">
+                  <div class="cal-day-name">SAT</div>
+                  <div class="cal-day-num">13</div>
+                  <div class="cal-day-cross">✕</div>
+                  <div class="cal-day-status red">CANCEL</div>
+                </div>
+                <div class="cal-day crossed">
+                  <div class="cal-day-name">SUN</div>
+                  <div class="cal-day-num">14</div>
+                  <div class="cal-day-cross">✕</div>
+                  <div class="cal-day-status red">CANCEL</div>
+                </div>
+              </div>
+
+              <!-- Animated Stamp -->
+              <div class="stamp-cancelled" id="stampCancelled">CANCELLED</div>
+
+              <button class="stamp-action-btn" id="stampAgainBtn">
+                ↻ RE-STAMP CANCELLED
+              </button>
+            </div>
+
+            <div>
+              <div class="spread-quote-box" id="cancelQuote">
+                "plans every trip with full enthusiasm. books nothing. cancels day of. zero remorse. zero apology. zero explanation. every. single. time."
+              </div>
+              <p class="editorial-meta-note">
+                ARCHIVAL LOG: Excitement peaks precisely 72 hours before departure. Booking rate remains at 0%. Cancellation arrives via single unpunctuated text at 11:59 AM.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SPREAD 2: OFFSIDE!!
+           ==================================================================== -->
+      <section class="spread" id="spread-2" aria-label="Spread 02: Offside">
+        <div class="editorial-frame">
+          <div class="spread-header">
+            <div class="spread-category">SPREAD 02 // TERRITORIAL RADIUS</div>
+            <div class="spread-pagination">P. 03</div>
+          </div>
+
+          <h2 class="spread-action-hero">OFFSIDE!!</h2>
+
+          <div class="spread-offside-content">
+            <!-- Minimal Schematic Map with Absurdly Far Figure -->
+            <div class="perimeter-radar" id="perimeterRadar">
+              <div class="radar-grid-lines"></div>
+              <div class="radar-ring radar-ring-3"></div>
+              <div class="radar-ring radar-ring-2"></div>
+              <div class="radar-ring radar-ring-1"></div>
+
+              <!-- Center Lane -->
+              <div class="radar-center-point">
+                <div class="radar-pin"></div>
+                <div class="radar-pin-label">HIS LANE (HOME BASE)</div>
+              </div>
+
+              <!-- Dotted boundary line -->
+              <div class="radar-boundary-line"></div>
+
+              <!-- Absurdly far away tiny figure -->
+              <div class="absurd-tiny-figure" title="Attempted crossing">
+                <div class="tiny-figure-dot"></div>
+                <div class="tiny-figure-label">SAHIL (OFFSIDE)</div>
+                <div class="tiny-figure-distance">281m [TOO FAR]</div>
+              </div>
+
+              <div class="radar-outside-label">
+                OUTSIDE WORLD (HAZARD)
+              </div>
+            </div>
+
+            <div>
+              <div class="offside-statement">
+                "never leaves his area."
+              </div>
+              <div class="spread-quote-box" id="offsideQuote">
+                "never leaves his area. not because there's nothing outside. just because outside exists and that's reason enough not to go."
+              </div>
+              <p class="editorial-meta-note">
+                PERIMETER AUDIT: The radius is non-negotiable. If an errand requires crossing the main avenue, civilization has officially asked too much of him.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SPREAD 3: RED CARD!!
+           ==================================================================== -->
+      <section class="spread" id="spread-3" aria-label="Spread 03: Red Card">
+        <div class="editorial-frame">
+          <div class="spread-header">
+            <div class="spread-category">SPREAD 03 // REGULATORY COMPLIANCE</div>
+            <div class="spread-pagination">P. 04</div>
+          </div>
+
+          <h2 class="spread-action-hero">RED CARD!!</h2>
+
+          <div class="spread-redcard-layout">
+            <div class="curfew-poster">
+              <div class="curfew-rule">// OFFICIAL CURFEW PROTOCOL</div>
+              <div class="curfew-time-hero" id="curfewClock">9:00 PM</div>
+              
+              <div class="curfew-timing-stack">
+                <div class="time-strike">NOT 9:30.</div>
+                <div class="time-strike">NOT 9:15.</div>
+                <div class="time-exact">9.</div>
+              </div>
+
+              <div class="curfew-sub-punchline">
+                "bhai Cinderella bhi itni strict nahi thi apne schedule ke saath."
+              </div>
+            </div>
+
+            <div>
+              <div class="spread-quote-box" id="redcardQuote">
+                "9 baje ghar. not 9:30. not 9:15. 9. bhai Cinderella bhi itni strict nahi thi apne schedule ke saath."
+              </div>
+              <p class="editorial-meta-note">
+                REGULATORY NOTE: Glass slippers allowed a midnight leeway. Sahil operates on an airtight 21:00 departure. No injury time. No extra minutes. Instant red card.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SPREAD 4: FOUL!! (THE ROUTINE)
+           ==================================================================== -->
+      <section class="spread" id="spread-4" aria-label="Spread 04: Foul">
+        <div class="editorial-frame">
+          <div class="spread-header">
+            <div class="spread-category">SPREAD 04 // PHYSIOLOGICAL ROUTINE</div>
+            <div class="spread-pagination">P. 05</div>
+          </div>
+
+          <h2 class="spread-action-hero">FOUL!!</h2>
+
+          <div class="spread-foul-content">
+            <!-- Absurd Vertical Timeline -->
+            <div class="absurd-vertical-timeline">
+              <div class="timeline-step">
+                <span class="timeline-badge">14:00</span>
+                <span class="timeline-title">SLEEP</span>
+              </div>
+              <div class="timeline-connector">↓</div>
+
+              <div class="timeline-step">
+                <span class="timeline-badge">17:00</span>
+                <span class="timeline-title">COFFEE</span>
+              </div>
+              <div class="timeline-connector">↓</div>
+
+              <div class="timeline-step">
+                <span class="timeline-badge">18:00</span>
+                <span class="timeline-title">ANIME</span>
+              </div>
+              <div class="timeline-connector">↓</div>
+
+              <div class="timeline-step">
+                <span class="timeline-badge">20:00</span>
+                <span class="timeline-title">SLEEP</span>
+              </div>
+              <div class="timeline-connector">↓</div>
+
+              <div class="timeline-step question-step">
+                <span class="timeline-badge">21:00</span>
+                <span class="timeline-title">???</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="spread-quote-box" id="foulQuote">
+                "sleeps in the afternoon like a retired 60 year old. wakes up, has coffee, watches anime, sleeps again. this is the guy who plays football btw."
+              </div>
+              <p class="editorial-meta-note">
+                ATHLETIC PARADOX: Sports scientists remain baffled. Peak aerobic stamina coexisting with the daily routine of a pensioner who worked 40 years in municipal railways.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SPREAD 5: GOLAZO!! (THE MESSI PARADOX)
+           ==================================================================== -->
+      <section class="spread" id="spread-5" aria-label="Spread 05: Golazo">
+        <div class="editorial-frame">
+          <div class="spread-header">
+            <div class="spread-category">SPREAD 05 // SPORTING PARALLELS</div>
+            <div class="spread-pagination">P. 06</div>
+          </div>
+
+          <h2 class="spread-action-hero">GOLAZO!!</h2>
+
+          <div class="spread-messi-magazine">
+            <div class="messi-header-tag">// DRAMATIC SPORTS EDITORIAL</div>
+            <div class="messi-cover-hero">MESSI.</div>
+            
+            <div class="messi-reveal-stage">
+              <div class="messi-line-1">
+                "plays like Messi."
+              </div>
+              <div class="messi-pause-indicator">
+                <span>·</span><span>·</span><span>·</span>
+              </div>
+              <div class="messi-line-2">
+                "also cancels like Messi cancelled on multiple clubs."
+              </div>
+              <div class="messi-punchline">
+                "coincidence?"
+              </div>
+              <div class="messi-conclusion">
+                "we think not."
+              </div>
+            </div>
+
+            <div class="spread-quote-box" id="golazoQuote" style="margin-top: 24px;">
+              "messi fan. plays like messi. also cancels like messi cancelled on multiple clubs. coincidence? we think not."
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SPREAD 6: EXTRA TIME!! (WWE vs ANIME)
+           ==================================================================== -->
+      <section class="spread" id="spread-6" aria-label="Spread 06: Extra Time">
+        <div class="editorial-frame">
+          <div class="spread-header">
+            <div class="spread-category">SPREAD 06 // PSYCHOLOGICAL PROFILE</div>
+            <div class="spread-pagination">P. 07</div>
+          </div>
+
+          <h2 class="spread-action-hero">EXTRA TIME!!</h2>
+
+          <div class="split-debate-wrap">
+            <div class="split-card split-card-wwe">
+              <div class="split-card-tag">// LEFT</div>
+              <div class="split-card-heading">WWE</div>
+              <div class="split-card-note">
+                Royal Rumble booking theories, chair shots, heel turns, and dramatic entrances.
+              </div>
+            </div>
+
+            <div class="split-card split-card-anime">
+              <div class="split-card-tag">// RIGHT</div>
+              <div class="split-card-heading">ANIME</div>
+              <div class="split-card-note">
+                Tournament arcs, villain redemption, power scaling rants, and 45-minute training montages.
+              </div>
+            </div>
+          </div>
+
+          <div class="split-center-stamp">
+            "BALANCED PERSONALITY?"
+          </div>
+
+          <div class="split-resolution">
+            "we stopped arguing."
+          </div>
+
+          <div class="spread-quote-box" id="extratimeQuote">
+            "watches WWE and anime back to back like that's a balanced personality. somehow has strong opinions on both. we stopped arguing."
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SPREAD 7: EDITORIAL CLOSER (THE MOHALLA FINALE)
+           ==================================================================== -->
+      <section class="spread" id="spread-7" aria-label="Spread 07: Finale">
+        <div class="editorial-frame">
+          <div class="spread-closer-wrap">
+            <div class="closer-kicker">// EDITORIAL EPILOGUE</div>
+            
+            <h2 class="closer-heading" id="closerHeading">
+              HAPPY<br>BIRTHDAY<br>SAHIL.
+            </h2>
+            
+            <p class="closer-quote" id="closerQuote">
+              "legend of his mohalla,<br>myth everywhere else."
+            </p>
+            
+            <div class="closer-signature" id="closerSignature">
+              teri lane hi teri duniya hai bc. ⚽
+            </div>
+            
+            <div style="margin-top: 16px;">
+              <button class="btn-editorial-primary" id="claimSethBtn">
+                CLAIM TITLE: SETH →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Bottom Navigation Folio -->
+  <footer class="magazine-nav">
+    <div class="nav-progress-bar" id="navProgressBar"></div>
+    <button class="nav-btn" id="prevBtn" disabled>
+      ← PREV SPREAD
+    </button>
+    <div class="nav-page-indicator" id="pageIndicator">
+      COVER
+    </div>
+    <button class="nav-btn" id="nextBtn">
+      NEXT SPREAD →
+    </button>
+  </footer>
+
+  <!-- Final Whistle Modal / Fullscreen Celebration -->
+  <div class="final-whistle-modal" id="finalModal" role="dialog" aria-modal="true" aria-label="Celebration">
+    <div class="final-whistle-card">
+      <div class="final-whistle-badge">// FINAL WHISTLE · ARCHIVE COMPLETE</div>
+      <div class="final-whistle-typewriter" id="finalTypewriter">
+        <span class="typewriter-cursor"></span>
+      </div>
+      <div>
+        <div class="final-whistle-stamp">CERTIFIED MOHALLA LEGEND</div>
+      </div>
+      <button class="btn-close-modal" id="closeModalBtn">
+        RETURN TO ARCHIVE
+      </button>
+    </div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+  <!-- Configuration and Engine -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
