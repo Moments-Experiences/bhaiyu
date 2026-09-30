@@ -152,7 +152,7 @@ window.BIRTHDAY_CONFIG = {
   song: {
     enabled: true,
     src: "whatsapp-audio-2026-08-07-at-114054-am_qiVL68Oc.mp3",
-    volume: 0.85,
+    
     loop: false
   }
 }
